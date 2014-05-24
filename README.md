@@ -13,4 +13,4 @@ All other directories and files are MIT Licensed. Feel free to use the HTML and 
 
 
 
-Credit to [Tom Preston-Werner](http://github.com/mojombo/jekyll) for the license.
+Credit to [Tom Preston-Werner](https://github.com/mojombo) for the license.
