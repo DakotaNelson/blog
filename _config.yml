@@ -3,8 +3,8 @@ name: Dat site title tho
 title: Some sort of awesome subtitle.
 #email: your-email@domain.com
 description: "Site description. We should probably write something cool here."
-baseurl: "/blog/"
-url: "http://www.dakotanelson.com/blog/"
+baseurl: "/blog"
+url: "http://www.dakotanelson.com/blog"
 
 # Build settings
 markdown: kramdown
