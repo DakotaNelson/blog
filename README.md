@@ -1,8 +1,11 @@
 A multi-author portfolio blog, available at http://www.dakotanelson.com/blog
 
+---
+**Local use:**  
+1. `cd /path/to/blog`  
+2. `jekyll serve -w`
 
-License
-====
+###License
 
 The following directories and their contents are Copyright the respective author of each post and photo. You may not reuse anything therein without that author's permission:
 
