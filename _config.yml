@@ -1,6 +1,6 @@
 # Site settings
-name: Blog | Dakota Nelson
-title: Some sort of awesome subtitle.
+name: Blog | Dakota Nelson # goes in the tab/window header
+title: (Clever Blog Title Here) # shows up in the header and footer
 #email: your-email@domain.com
 #description: "Site description. We should probably write something cool here. Blah blah lorem ipsum spacing words stuff fill space blergh. Yay for filler text!"
 baseurl: "/blog"
