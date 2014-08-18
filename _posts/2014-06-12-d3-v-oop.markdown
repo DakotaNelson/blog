@@ -8,7 +8,7 @@ tags: programming d3
 
 {% assign author = site.authors[page.author] %}
 
-I was writing some [D3](http://www.d3js.org) for [work](http://www.stresearch.com) the other day (if you haven't played around with D3, I thoroughly recommend it - it's remarkably easy to get a beautiful visualization up and running), and found myself accidentally conducting some Deep Thinking about programming styles. D3 has a very distinct [style](http://bl.ocks.org/mbostock/3943967) remininiscent of jQuery, which stems from its heavy use of selections and joins. After some time spent furiously programming, I stepped back, only to realize I had (accidentally!) completely disregarded D3's canoncial style and unconsciously used a (to me) much more familiar object oriented pattern.
+I was writing some [D3](http://www.d3js.org) for [work](http://www.stresearch.com) the other day (if you haven't played around with D3, I thoroughly recommend it - it's remarkably easy to get a beautiful visualization up and running), and found myself accidentally conducting some Deep Thinking about programming styles. D3 has a very distinct [style](http://bl.ocks.org/mbostock/3943967) remininiscent of jQuery, which stems from its heavy use of [selections and joins](http://bost.ocks.org/mike/join/). After some time spent furiously programming, I stepped back, only to realize I had (accidentally!) completely disregarded D3's canoncial style and unconsciously used what was to me a much more familiar object oriented pattern.
 
 I had events coming in as dictionaries, and had written some quick and sloppy code to plot them on a timeline in order to visualize when the event occurred, when local news picked it up, and when a global news network covered it. After some D3 boilerplate that doesn't matter, was (a longer version of) this function:
 
@@ -51,16 +51,12 @@ function occurrence(someEvent) {
   this.vis.selectAll("circle").transition().duration(1000).attr("cx",x(this.time));
 }
 
-occurrences = [];
-
-_.each(data,function(d){
-  occurrences.push(new occurrence(d));
-});
+occurrences = data.map(function(d) { return new occurrence(d); });
 
 {% endhighlight %}
 
-Which is intersting, since this blatantly violates everything D3 tries to be. Instead of joining data to elements, I was (gasp!) adding elements one at a time, as part of an object. A much more D3-esque method would have been to filter the data (using [Underscore](http://www.underscorejs.org), probably) into the three categories - actual, local, global - and then to use D3 to `selectAll("circle")` and join to the data.
+Which is interesting, since this blatantly violates everything D3 tries to be. Instead of joining data to elements, I was (gasp!) adding elements one at a time, as part of an object. A much more D3-esque method would have been to filter the data (using [Underscore](http://www.underscorejs.org), probably) into the three categories - actual, local, global - and then to use D3 to `selectAll("circle")` and join to the data.
 
-With that said, although it was an unconscious decision at first, I would write this code the same way again. After my initial knee-jerk reaction to not using the sacred D3 design patterns, I decided OOP makes more sense. When I (inevitably) have to go back and operate on this data again - to remove an event, or something of that sort - having it nicely bundled in an object makes manipulation easy. With the classic D3 method, I would likely have no way to select a single event without resorting to something hacky like putting each event in a "g" element with an ID stored in an array somewhere or classing the elements that make up each event with something unique.
+With that said, although it was an unconscious decision at first, I would write this code the same way again. Despite my initial knee-jerk reaction to not using the canonical D3 design patterns, OOP makes more sense. When I (inevitably) have to go back and operate on this data again - to remove an event, or something of that sort - having it nicely bundled in an object makes manipulation easy. With the classic D3 method, I would likely have no way to select a single event without resorting to something hacky like putting each event in an svg "g" element with a unique ID - still viable, but it feels a little odd.
 
 The standard D3 style would probably work just as well, to be honest - but, for better or worse, I'm still more used to standard OOP methods, and when it's time to crank out some code and there are several equivalent paths, that's what I'll fall back to.

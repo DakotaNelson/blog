@@ -1,10 +1,11 @@
 # Site settings
-name: Dat site title tho
+name: Blog | Dakota Nelson
 title: Some sort of awesome subtitle.
 #email: your-email@domain.com
-description: "Site description. We should probably write something cool here."
+#description: "Site description. We should probably write something cool here. Blah blah lorem ipsum spacing words stuff fill space blergh. Yay for filler text!"
 baseurl: "/blog"
 url: "http://www.dakotanelson.com/blog"
+#username: "DakotaNelson"
 
 # Build settings
 markdown: kramdown
