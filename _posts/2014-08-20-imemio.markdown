@@ -20,7 +20,7 @@ Need to find out the details surrounding an event? One search provides a high-le
 The primary data view serves to answer all of these questions without overloading the user with information.
 
 {:.center}
-![overview]({{site.url}}/assets/ferguson_overview.png)
+![overview]({{site.url}}/assets/ferguson-overview.png)
 
 At the left, every Tweet in the group - this one about whether or not Molotov cocktails were in use at the Ferguson protests - is visible, and can be sorted by the sentiment of the Tweet, the number of followers of the Tweet's author, or when the Tweet occurred. The bar chart at top shows 150 Tweets - either the most viewed 150, or the most polar 150, depending on user choice - which can be sorted by number of views (height) or sentiment (color). At middle, a sunburst chart (a pie chart's more complicated cousin) shows how many of the Tweets in this group were favorited or retweeted - a good indicator of how popular or viral the group is. A histogram of retweets shows a full breakdown - were all the Tweets retweeted once, or many times? Finally, a timeline shows when the Tweets in this group were sent. Toggleable sub-plots display when Tweets that were positive, negative, or neutral occurred.
 
