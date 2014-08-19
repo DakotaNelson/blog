@@ -1,0 +1,52 @@
+---
+layout: post
+title: "Introducing: Imemio"
+date: 2014-08-20 12:00
+author: dakota
+tags: programming d3 twitter
+---
+
+{% assign author = site.authors[page.author] %}
+
+Over the course of the summer, I have been working at [Systems and Technology Research](http://www.stresearch.com), a small defense contractor that works primarily on DARPA projects, alongside Sarah and Liani, both fellow Olin Class of 2017 students. This post will walk through the fruits of the summer: a webapp which enables answering a variety of questions that business or intelligence analysts may have about Twitter data. Let's dive right in and take a look at some of those questions.
+
+Starting at the high level, the webapp - known as Imemio - allows insight into what's active on Twitter. Instead of returning thousands of Tweets from a search, Imemio returns topical groups of Tweets that make analysis simple:
+
+{:.center}
+![search]({{site.url}}/assets/ferguson_search.png)
+
+Need to find out the details surrounding an event? One search provides a high-level overview of the entire topic, quickly and easily. However, Imemio becomes really useful once one of these groups is selected. There are quite a few questions to be answered about the data Imemio provides - how do people feel about this event? What kind of people are talking about it? How popular of a topic is this?
+
+The primary data view serves to answer all of these questions without overloading the user with information.
+
+{:.center}
+![overview]({{site.url}}/assets/ferguson_overview.png)
+
+At the left, every Tweet in the group - this one about whether or not Molotov cocktails were in use at the Ferguson protests - is visible, and can be sorted by the sentiment of the Tweet, the number of followers of the Tweet's author, or when the Tweet occurred. The bar chart at top shows 150 Tweets - either the most viewed 150, or the most polar 150, depending on user choice - which can be sorted by number of views (height) or sentiment (color). At middle, a sunburst chart (a pie chart's more complicated cousin) shows how many of the Tweets in this group were favorited or retweeted - a good indicator of how popular or viral the group is. A histogram of retweets shows a full breakdown - were all the Tweets retweeted once, or many times? Finally, a timeline shows when the Tweets in this group were sent. Toggleable sub-plots display when Tweets that were positive, negative, or neutral occurred.
+
+Perhaps even more importantly, all of the visuals on the page can be selected to narrow the user's view. Only want to see Tweets from people with over 10,000 followers? Sort, then select the bar chart. Only want to see Tweets with negative sentiment? Also bar chart. Only retweeted Tweets, or only Tweets with over 10 retweets? The sunburst or histogram. Only Tweets between 8 and 9 PM? Timeline. Sorts can be made on top of selections, as well - want a quick overview of the event? Select a few most-viewed tweets and sort by date. The selection and sorting engine allows for deep parsing and insight into the data at hand, as well as quick drilldown on topics of interest.
+
+This ease of drilldown enables quick detection and evalution of anomalies - which is perfect for detecting propaganda and astroturfing. For instance:
+
+{:.center}
+![overview]({{site.url}}/assets/PropagandaAttempt.png)
+
+Sure is suspicious that there's such a sudden burst of activity, isn't there? One drag of the mouse, and we can dive deeper - weird how they all have roughly the same number of followers, the message is the same, and their names follow similar formats. Instant credible recognition of propaganda attempts by augmenting human pattern detection using intuitive software.
+
+In addition to the above, Imemio provides a pair of secondary analysis tools - a map and timeline.
+
+{:.center}
+![overview]({{site.url}}/assets/WarsiMapBubble.png)
+
+About 2% of Tweets are geotagged, enabling a high-level overview of where events (and reactions to them) are taking place.
+
+{:.center}
+![overview]({{site.url}}/assets/ParisProtestTimelineB.png)
+
+A deeper timeline (based on [Timeline.js](http://timeline.knightlab.com/)) allows a closer look at who is reporting what, when.
+
+The map and timeline open in separate tabs and update on selections, enabling an efficient workflow for drilldown to topics of interest - especially if you have access to multiple monitors.
+
+Imemio heavily leverages [D3.js](http://d3js.org/) for the charts and animations, but is framework-free - all of the architecture was handled in-house.
+
+Do you want to know more? I'm happy to keep talking at you, and there's also a good chance you can get your hands on some credentials to try Imemio for yourself - head over to [my website]({{author.web}}) and drop me a line.

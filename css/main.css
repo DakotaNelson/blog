@@ -34,6 +34,9 @@ a:visited { color: #205caa; }
   zoom: 1;
 }
 
+.center {
+  text-align: center;
+}
 
 /* Layout Styles */
 /* ----------------------------------------------------------*/
