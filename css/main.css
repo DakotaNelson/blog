@@ -38,6 +38,14 @@ a:visited { color: #205caa; }
   text-align: center;
 }
 
+.flow-image {
+  display: block;
+  float: left;
+  width: 30%;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
 /* Layout Styles */
 /* ----------------------------------------------------------*/
 
