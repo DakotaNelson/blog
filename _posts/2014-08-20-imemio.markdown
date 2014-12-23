@@ -8,7 +8,7 @@ tags: programming d3 twitter
 
 {% assign author = site.authors[page.author] %}
 
-Over the course of the summer, I have been working at [Systems and Technology Research](http://www.stresearch.com), a small defense contractor that works primarily on DARPA projects, alongside Sarah and Liani, both fellow Olin Class of 2017 students. This post will walk through the fruits of the summer: a webapp which enables answering a variety of questions that business or intelligence analysts may have about Twitter data. Let's dive right in and take a look at some of those questions.
+Over the course of the summer, I've been working at [Systems and Technology Research](http://www.stresearch.com), a small defense contractor that works primarily on DARPA projects, alongside Sarah and Liani, both fellow Olin Class of 2017 students. This post will walk through the fruits of the summer: a webapp which enables answering a variety of questions that business or intelligence analysts may have about Twitter data. Let's dive right in and take a look at some of those questions.
 
 Starting at the high level, the webapp - known as Imemio - allows insight into what's active on Twitter. Instead of returning thousands of Tweets from a search, Imemio returns topical groups of Tweets that make analysis simple:
 
