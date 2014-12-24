@@ -6,7 +6,7 @@ author: dimitar
 tags: [circuits, product, android]
 ---
 
-  This is a collaborative post by <a href="http://dimitar.io" target="_blank">Dimitar</a> and <a href="http://dakotanelson.com" target="_blank">Dakota</a>.
+  *This is a collaborative post by <a href="http://dimitar.io" target="_blank">Dimitar</a> and <a href="http://dakotanelson.com" target="_blank">Dakota</a>.*
 
   We made a cool thing this semester - a small vibrating silicon anklet that helps you get around.  Warning: shameless plug ahead - we’re very excited about it!
 
