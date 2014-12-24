@@ -2,13 +2,25 @@
 layout: default
 ---
 
-{% assign author = site.authors[page.author] %}
-
 <div class="post">
 
   <header class="post-header">
     <h1>{{ page.title }}</h1>
-    <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • <a href="{{ author.web }}">{{ author.name }}</a>{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+    <p class="meta">{{ page.date | date: "%b %-d, %Y" }}
+    {% assign authorCount = page.authors | size %}
+    {% if authorCount != 0 %}
+        {% for a in page.authors %}
+            {% assign author = site.authors[a] %}
+            {% if forloop.first %}
+                • <a href="{{ author.web }}">{{ author.name }}</a>
+            {% elsif forloop.last %}
+                and <a href="{{ author.web }}">{{ author.name }}</a>
+            {% else %}
+                , <a href="{{ author.web }}">{{ author.name }}</a>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+    {% if page.meta %} • {{ page.meta }}{% endif %}</p>
   </header>
 
   <article class="post-content">
