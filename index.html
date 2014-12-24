@@ -9,8 +9,23 @@ layout: default
   <ul class="posts">
     {% for post in site.posts %}
       <li>
-      <span class="post-date">{{ post.date | date: "%b %-d, %Y" }} by {{ site.authors[post.author].name }} </span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}
+      {% assign authorCount = post.authors | size %}
+      {% if authorCount != 0 %}
+          {% for a in post.authors %}
+              {% assign author = site.authors[a] %}
+              {% if forloop.first %}
+                  by {{ author.name }}</a>
+              {% elsif forloop.last %}
+                  and {{ author.name }}</a>
+              {% else %}
+                  , {{ author.name }}</a>
+              {% endif %}
+          {% endfor %}
+      {% endif %}
+      </span>
+
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </li>
     {% endfor %}
   </ul>

@@ -2,13 +2,8 @@
 layout: post
 title: "Introducing: Imemio"
 date: 2014-08-20 12:00
-<<<<<<< HEAD
 authors: [dakota]
-tags: programming d3 twitter
-=======
-author: dakota
 tags: [programming, d3, twitter, analytics]
->>>>>>> 2b6ac8c4cf15f3d6e8c8e2b702100c3a8060b469
 ---
 
 {% assign author = site.authors[page.author] %}
