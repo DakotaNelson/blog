@@ -3,7 +3,7 @@ layout: post
 title: "D3 v. OOP"
 date: 2014-06-12 10:00
 authors: [dakota]
-tags: programming d3
+tags: [programming, d3]
 ---
 
 {% assign author = site.authors[page.author] %}
