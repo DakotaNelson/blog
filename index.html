@@ -21,8 +21,8 @@ layout: default
               {% endif %}
           {% endfor %}
       </span>
-      <p><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
-      <p>{{ post.content | strip_html | truncate: 300 }}</p>
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <span class="post-blurb">{{ post.content | strip_html | truncate: 300 }}</span>
       </li>
     {% endfor %}
   </ul>
