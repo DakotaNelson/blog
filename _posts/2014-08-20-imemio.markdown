@@ -3,7 +3,7 @@ layout: post
 title: "Introducing: Imemio"
 date: 2014-08-20 12:00
 author: dakota
-tags: programming d3 twitter
+tags: [programming, d3, twitter, analytics]
 ---
 
 {% assign author = site.authors[page.author] %}
