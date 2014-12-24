@@ -10,8 +10,6 @@ layout: default
     {% for post in site.posts %}
       <li>
       <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}
-      {% assign authorCount = post.authors | size %}
-      {% if authorCount != 0 %}
           {% for a in post.authors %}
               {% assign author = site.authors[a] %}
               {% if forloop.first %}
@@ -22,10 +20,9 @@ layout: default
                   , {{ author.name }}</a>
               {% endif %}
           {% endfor %}
-      {% endif %}
       </span>
-
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <p><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
+      <p>{{ post.content | strip_html | truncate: 300 }}</p>
       </li>
     {% endfor %}
   </ul>
