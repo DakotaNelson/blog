@@ -3,6 +3,7 @@ layout: post
 title: "D3 v. OOP"
 date: 2014-06-12 10:00
 authors: [dakota]
+description: A short reflection on the difference in styles between object oriented programming and the style espoused by D3.js.
 tags: [programming, d3]
 ---
 

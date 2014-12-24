@@ -1,8 +1,7 @@
 # Site settings
 name: Blog | Dakota Nelson # goes in the tab/window header
 title: (Clever Blog Title Here) # shows up in the header and footer
-#email: your-email@domain.com
-#description: "Site description. We should probably write something cool here. Blah blah lorem ipsum spacing words stuff fill space blergh. Yay for filler text!"
+description: "Portfolio blog of several Olin College students. Software, hardware, and entrepreneurship - it's all engineering. Current writers: Dakota Nelson and Dimitar Dimitrov."
 baseurl: "/blog"
 url: "http://www.dakotanelson.com/blog"
 #username: "DakotaNelson"

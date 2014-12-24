@@ -3,6 +3,7 @@ layout: post
 title: "Introducing: LeadMe"
 date: 2014-12-23 12:00
 authors: [dakota, dimitar]
+description: LeadMe is an anklet that will change how you find your way around. Using haptic feedback, LeadMe guides you where you want to go, without the need to stare at your phone.
 tags: [circuits, product, android]
 ---
 
