@@ -44,6 +44,6 @@ If you’re interested in more details on LeadMe’s design and construction, he
 {:.center}
 ![render]({{site.url}}/assets/leadme-render.jpg){: .image }
 
-  We’re continuing work on LeadMe at the very least throughout this next semester, with plans to release it to the public soon - likely through Kickstarter. If you’re interested, keep an eye on this blog as we move forward.  If you’re really excited, drop us a line - we’d be happy to chat! LeadMe is still in heavy development, and we’re very open to ideas along the way.
+  We’re continuing work on LeadMe at the very least throughout this next semester, with plans to release it to the public soon - likely through Kickstarter. If you’re interested, keep an eye on this blog as we move forward.  If you’re really excited, comment below or drop us a line - we’d be happy to chat! LeadMe is still in heavy development, and we’re very open to ideas along the way.
 
   Thanks and see you soon!
