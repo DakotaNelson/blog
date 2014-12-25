@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+description: The blog of several Olin College Students. We write about engineering, software, hardware, and entrepreneurship.
 permalink: /about/
 ---
 

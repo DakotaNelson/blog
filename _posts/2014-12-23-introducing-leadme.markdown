@@ -3,13 +3,14 @@ layout: post
 title: "Introducing: LeadMe"
 date: 2014-12-23 12:00
 authors: [dakota, dimitar]
+description: LeadMe is an anklet that will change how you find your way around. Using haptic feedback, LeadMe guides you where you want to go, without the need to stare at your phone.
 tags: [circuits, product, android]
 ---
 
   We made a cool thing this semester - a small vibrating silicon anklet that helps you get around.  Warning: shameless plug ahead - we’re very excited about it!
 
 {:.center}
-![ankle]({{site.url}}/assets/leadme-ankle.jpg){: .image }
+![ankle with LeadMe on it]({{site.url}}/assets/leadme-ankle.jpg){: .image }
 
   For many, navigation can be difficult. Even though we rely on accurate GPS nearly every day, the way we use it basically hasn’t changed since humans invented maps - staring at a drawing of the world and following a line on it, connecting where you are to where you want to go. Although smartphones make finding a route easy, following it is still a pain. Checking your map while walking is annoying, and it only gets worse if you’re out on a run.  If you’re biking, it can be fatal. And for many with vision impairments, looking at a map isn’t even an option.
 
@@ -30,9 +31,9 @@ tags: [circuits, product, android]
   Here are pictures of some home-brewed PCB prototypes:
 
 {:.center}
-![power]({{site.url}}/assets/leadme-power.jpg){: .flow-image}
-![control]({{site.url}}/assets/leadme-control.jpg){: .flow-image}
-![motor]({{site.url}}/assets/leadme-motor.jpg){: .flow-image}
+![LeadMe's power distribution and battery interface board]({{site.url}}/assets/leadme-power.jpg){: .flow-image}
+![LeadMe's control board, with ATMega]({{site.url}}/assets/leadme-control.jpg){: .flow-image}
+![LeadMe's motor driver board]({{site.url}}/assets/leadme-motor.jpg){: .flow-image}
 
 <!-- hacky, but it works -->
 <br style="clear:both;" />
