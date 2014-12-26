@@ -1,7 +1,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}</title>
+    <title>{% if page.title %}{{ page.title }} | ungineers{% else %}{{ site.name }}{% endif %}</title>
     <meta name="viewport" content="width=device-width">
     {% if page.description %} <meta name="description" content="{{ page.description }}">{% endif %}
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl }}">
@@ -16,7 +16,7 @@
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-50003361-2', 'dakotanelson.com');
+    ga('create', 'UA-50003361-2', 'ungineers.com');
     ga('send', 'pageview');
     </script>
 
