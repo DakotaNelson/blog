@@ -1,9 +1,8 @@
 # Site settings
 name: Blog | ungineers # goes in the tab/window header
 title: ungineers # shows up in the header and footer
-description: "Portfolio blog of several Olin College students. Software, hardware, and entrepreneurship - it's all engineering. Current writers: Dakota Nelson and Dimitar Dimitrov."
+description: "Portfolio blog of several Olin College students. Software, hardware, and entrepreneurship - it's all engineering. Current writers: Dakota Nelson, Dimitar Dimitrov, and Logan Davis."
 url: "http://www.ungineers.com"
-#username: "DakotaNelson"
 
 # Build settings
 markdown: kramdown
