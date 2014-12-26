@@ -1,4 +1,4 @@
-A multi-author portfolio blog, available at http://www.dakotanelson.com/blog
+A multi-author portfolio blog, available at http://ungineers.com
 
 ---
 **Local use:**  
