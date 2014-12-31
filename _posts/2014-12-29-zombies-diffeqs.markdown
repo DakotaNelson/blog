@@ -24,7 +24,7 @@ tags: [math, python]
   Ah, but this wasn't just any zombie game. This was a _sophisticated_ zombie game.
 
 {:.center}
-![screencap of zombie game]({{site.url}}/assets/zombies.JPG){: .image }
+![screencap of zombie game]({{site.url}}/assets/zombies.PNG){: .image }
 
   Figuring that we should at least pay lip service to the actual subject at hand, Dakota and I tried to make sure our game was mostly a differential equation visualizer. Sure, we coded in a couple forms of user input - "air strikes" and "infantry insertions" - but the real point of the project was to watch famous differential equations interact on randomly generated 2-D planes. At least, that's what we told ourselves. Deep down, I think we really just wanted to craft something cool, with one foot in the realm of DiffEQs and the other in the land of game design.
 
