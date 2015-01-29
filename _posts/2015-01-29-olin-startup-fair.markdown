@@ -11,7 +11,7 @@ tags: [olin, entrepreneurship, startup]
 
 In less than three weeks, Olin's spring startup fair will in full swing. Here's why you, as the founder of a startup, should take the time to attend:
 
-The startup fair is an incredibly exciting event for students here at Olin - and that excitement is about your company. Beyond the simple objective of finding a job or internship, students are genuinely excited to meet startups that they find interesting - which, to be honest, is most.
+The startup fair is an incredibly exciting event for students here at Olin - and that excitement is about your company. Beyond the simple objective of finding a job or internship, students are genuinely enthusiastic to meet startups that they find interesting - which, to be honest, is most.
 
 One of Olin's primary tenets is being interested and capable in a broad range of areas, and startups are an excellent way for students to exercise their many interests in a high-energy environment. The many hats worn at startups fit Olin students perfectly.  Diversity of interests also translates into diversity of skills - the startup fair is for any company, not just software companies, or hardware companies, or whatever other division you care to draw. Find a student who is interested, and you'll have found someone who is eager to tackle the problems you face.
 
