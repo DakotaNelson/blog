@@ -9,7 +9,7 @@ tags: [olin, entrepreneurship, startup]
 
 {% assign author = site.authors[page.author] %}
 
-In less than three weeks, Olin's spring startup fair will in full swing. Here's why you, as the founder of a startup, should take the time to attend:
+In less than three weeks, Olin's spring startup fair will be in full swing. Here's why you, as the founder of a startup, should take the time to attend:
 
 The startup fair is an incredibly exciting event for students here at Olin - and that excitement is about your company. Beyond the simple objective of finding a job or internship, students are genuinely enthusiastic to meet startups that they find interesting - which, to be honest, is most.
 
