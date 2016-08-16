@@ -3,7 +3,7 @@ layout: post
 title: "Striker Security"
 date: 2016-08-15 10:00
 authors: [dakota]
-description: Turns out starting your own company is hard work.
+description: I'm CEO of... me?
 tags: [entrepreneurship, security, freelancing]
 ---
 
